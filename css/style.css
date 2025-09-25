@@ -130,7 +130,7 @@ section {
 
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
-    url("/Tattoo/img/pp.jpg") center/cover no-repeat;
+    url("/img/pp.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
