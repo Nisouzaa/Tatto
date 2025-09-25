@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petterson Tattoo</title>
+
+    <meta name="description"
+        content="Studio Tattoo - Arte na pele com realismo, old school e tatuagens minimalistas. Transforme sua história em arte.">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Js/script.js" defer></script>
+
+    <!-- incones -->
+    <link rel="icon" href="./img/tattoo-machine.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1 id="logo"><img src="./img/B-P-20-08-2025.png" alt="Logo do Studio"></h1>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Meu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#cadastro">Cadastro</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="titulo">
+            <h2>Arte na Pele</h2>
+            <p>Transformando sua história em tatuagem.</p>
+            <a href="#cadastro" id="cad-btn" class="btn">Agende sua Tattoo</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <article class="service-card">
+            <i class="fas fa-pen-nib"></i>
+            <h3>Tatuagens Minimalistas</h3>
+            <p>Pequenos detalhes que carregam grandes significados.</p>
+        </article>
+        <article class="service-card">
+            <i class="fas fa-user"></i>
+            <h3>Realismo</h3>
+            <p>Retratos e artes detalhadas com perfeição.</p>
+        </article>
+        <article class="service-card">
+            <i class="fas fa-star"></i>
+            <h3>Old School</h3>
+            <p>O clássico estilo que nunca sai de moda.</p>
+        </article>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Arte</h2>
+        <div class="galeria-container">
+            <figure class="galeria-item">
+                <img src="./img/t1.jpeg" alt="Tatuagem 1" width="100%" height="100%">
+            </figure>
+            <figure class="galeria-item">
+                <img src="./img/t5.jpeg" alt="Tatuagem 2" width="100%" height="100%">
+            </figure>
+            <figure class="galeria-item">
+                <img src="./img/t3.jpeg" alt="Tatuagem 3" width="100%" height="100%">
+            </figure>
+            <figure class="galeria-item">
+                <img src="./img/t6.jpeg" alt="Tatuagem 4" width="100%" height="100%">
+            </figure>
+        </div>
+
+        <!-- Modal para ampliar a imagem -->
+        <div id="modal" class="modal" aria-hidden="true">
+            <button class="fechar" aria-label="Fechar imagem">&times;</button>
+            <img class="modal-conteudo" id="img-ampliada" alt="Imagem ampliada">
+        </div>
+    </section>
+    <!-- Cadastro  -->
+    <section id="cadastro">
+        <h2>Cadastro de Clientes</h2>
+        <form id="cadastroForm">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone (12)9999-9999"
+                pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" required>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="4" placeholder="Escreva sua ideia de tatuagem"></textarea>
+            <button type="submit">
+                Enviar Cadastro</button>
+        </form>
+        <p id="msg-sucesso">Cadastro enviado com sucesso!</p>
+    </section>
+
+    <!-- Área de slideshow -->
+    <article id="conteiner-post">
+        <div id="sobremim">
+            <h2>Sobre Mim</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum error similique quibusdam, vitae
+                praesentium explicabo. Vel ab veniam magni temporibus. Non inventore doloribus ipsa earum voluptate quia
+                eligendi accusamus.
+        </div>
+        <div id="mycontact">
+            <h3>Contato</h3>
+            <p>Email: <a href="">testeteste@teste.com</a><br>
+                Telefone/WhatsApp: <a href="tel:+55 12987081612">+55 (12) 98708-1612</a><br>
+
+                Instagram: <a href="https://www.instagram.com/seuusuario" target="_blank">@testeTeste</a>
+            </p>
+        </div>
+        <div id="endeco">
+            <h3>Endereço/Estúdio</h3>
+            <p>Rua das Artes, 123 – Bairro Criativo, Cidade – Estado, Brasil</p>
+        </div>
+    </article>
+    <section id="slide-show">
+        <div id="slide-container">
+            <div id="slideshow">
+                <div id="slides">
+                    <img src="./img/t2.jpeg" alt="Esboço tatuagem 1">
+                    <img src="./img/art2.jpg" alt="Esboço tatuagem 2">
+                    <img src="./img/t4.jpeg" alt="Esboço tatuagem 3">
+                    <img src="./img/t5.jpeg" alt="Esboço tatuagem 4">
+                    <img src="./img/arte5.jpg" alt="Arte na pele">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div id="social-icons">
+            <a href="https://wa.me/12987081612" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="tel:12987081612"><i class="fas fa-phone"></i></a>
+            <a href="https://github.com/Nisouzaa" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Studio Tattoo - Todos os direitos reservados.</p>
+
+    </footer>
+
+</body>
+
+</html>
