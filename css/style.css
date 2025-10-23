@@ -128,7 +128,8 @@ section {
   min-height: 80vh;
 }
 
-#icon-status {
+
+#home #icon-status {
   color: red;
   box-shadow: #a00;
 }
